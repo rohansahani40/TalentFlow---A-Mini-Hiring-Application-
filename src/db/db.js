@@ -537,7 +537,7 @@ export async function resetCandidates() {
   await db.timelines.clear();
   
   const fakeStages = ["applied", "screen", "tech", "offer", "hired", "rejected"];
-  const availableJobs = [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
+  const availableJobs =[1,2,3,4,5,6,7,8,9,10,11,12,13,14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,35,36,37,38,39,40,41,42]; // Ensure these job IDs exist in your jobs table
   
   // Create deterministic candidates with fixed patterns
   const candidates = Array.from({ length: 1000 }).map((_, i) => {
@@ -571,7 +571,7 @@ export async function seedCandidates() {
   const count = await db.candidates.count();
   if (count === 0) {
     const fakeStages = ["applied", "screen", "tech", "offer", "hired", "rejected"];
-    const availableJobs = [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34];
+    const availableJobs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,35,36,37,38,39,40,41,42]; // Ensure these job IDs exist in your jobs table
     
     // Create deterministic candidates with fixed patterns
     const candidates = Array.from({ length: 1000 }).map((_, i) => {
