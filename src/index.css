@@ -1,0 +1,14 @@
+@import "tailwindcss";
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  /* Dark app background (Tailwind-free to avoid @apply error) */
+  background-color: #111827; /* gray-900 */
+  color: #f3f4f6;            /* gray-100 */
+}
